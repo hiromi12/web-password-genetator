@@ -41,8 +41,8 @@ function generatePassword() {
 
   // copy the result
   function copyToClipboard() {
-    const textToCopy = document.getElementById("result");
-    textToCopy.select();
+    const result = document.getElementById("result");
+    result.select();
     document.execCommand("copy");
-    alert("Copied the text: " + textToCopy.value);
+    alert("Copied the text: " + result.value);
   }
