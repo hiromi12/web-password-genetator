@@ -1,0 +1,57 @@
+<!-- 
+  Author: Hiromi Honda
+  Date: 02-22-2023
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=B612&family=Crimson+Pro:wght@200&family=Roboto+Mono:wght@200&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- main -->
+  <main>
+    <div id="container">
+      <!-- content -->
+      <div class="inner">
+        <h1>Password Generator</h1>
+        <textarea id="result" rows="1" value="Click Generate" readonly></textarea>
+        <br>
+        <button id="copy-btn" onclick="copyToClipboard()">Copy</button>
+        <br>
+        <label for="length">Password length:</label>
+        <input type="range" id="length" min="4" max="32" value="4" oninput="updateValue(this.value)">
+        <span id="lengthValue"></span>
+        <br>
+        <label for="uppercase">Include uppercase letters:</label>
+        <input type="checkbox" id="uppercase">
+        <br>
+        <label for="lowercase">Include lowercase letters:</label>
+        <input type="checkbox" id="lowercase">
+        <br>
+        <label for="numbers">Include numbers:</label>
+        <input type="checkbox" id="numbers" value="1" Checked>
+        <br>
+        <label for="special">Include special characters:</label>
+        <input type="checkbox" id="special">
+        <br>
+        <button id="generate" onclick="generatePassword()">Generate</button>
+        <br>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <p id="footer-pc">&copy;All Rights Reserved. &verbar; 2023 Created by <a href="mainto:hhonda@atu.edu">Hiromi
+        Honda</a></p>
+    <p><a href="github.com/hiromi12/web-password-generator">GitHub</a></p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

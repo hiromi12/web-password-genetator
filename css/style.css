@@ -1,0 +1,104 @@
+/* 
+  Author: Hiromi Honda
+  Date: 02-22-2023
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+}
+body, main, footer, a {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* main */
+main {
+  height: 100vh;
+  background-color: #ddd;
+  text-align: center;
+  padding: 4em 0;
+}
+#container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #aaa;
+  max-width: 450px;
+  height: 440px;
+  border-radius: 18px;
+}
+.inner {
+  padding: 1.75em;
+}
+h1 {
+  font-size: 2em;
+}
+textarea {
+  resize: none;
+}
+#result {
+  width: 350px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.25em;
+  margin-bottom: 0.75em;
+}
+#copy-btn {
+  margin-bottom: 0.75em;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+}
+main label {
+  font-size: 1.25em; 
+}
+#generate {
+  font-weight: bold;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  padding: 1.25em 0;
+  bottom: 0;
+}
+footer p {
+  color: #ccc;
+  margin-bottom: 5px;
+}
+footer p a {
+  color: rgb(132, 146, 250);
+}
+footer p a:hover {
+  color: #666;
+}
+
+@media only screen and (max-width: 540px) {
+  #container {
+    font-size: 0.8em;
+    height: 390px;
+  }
+  #result {
+    width: 290px;
+    font-weight: 560;
+    font-size: 12px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+}
