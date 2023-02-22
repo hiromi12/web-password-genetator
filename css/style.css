@@ -50,7 +50,7 @@ textarea {
   padding: 10px;
   border-radius: 8px;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1em;
   margin-bottom: 0.75em;
 }
 #copy-btn {
@@ -96,7 +96,7 @@ footer p a:hover {
   #result {
     width: 290px;
     font-weight: 560;
-    font-size: 12px;
+    font-size: 1em;
   }
   footer p {
     font-size: 12px;
