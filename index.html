@@ -25,20 +25,20 @@
         <br>
         <button id="copy-btn" onclick="copyToClipboard()">Copy</button>
         <br>
-        <label for="length">Password length:</label>
+        <label for="length">Length:</label>
         <input type="range" id="length" min="4" max="32" value="4" oninput="updateValue(this.value)">
         <span id="lengthValue"></span>
         <br>
-        <label for="uppercase">Include uppercase letters:</label>
+        <label for="uppercase">Uppercase Letters:</label>
         <input type="checkbox" id="uppercase">
         <br>
-        <label for="lowercase">Include lowercase letters:</label>
+        <label for="lowercase">Lowercase Letters:</label>
         <input type="checkbox" id="lowercase">
         <br>
-        <label for="numbers">Include numbers:</label>
+        <label for="numbers">Numbers:</label>
         <input type="checkbox" id="numbers" value="1" Checked>
         <br>
-        <label for="special">Include special characters:</label>
+        <label for="special">Special Characters:</label>
         <input type="checkbox" id="special">
         <br>
         <button id="generate" onclick="generatePassword()">Generate</button>
